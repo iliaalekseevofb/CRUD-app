@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TodoItem } from '../components';
+import { TodoItem, CreateTodo } from '../components';
 
 const data = [
   {
@@ -44,6 +44,7 @@ const Home = () => {
           removeTodo={removeTodo}
         />
       ))}
+      <CreateTodo todos={todos} setTodos={setTodos} />
     </div>
   )
 }
